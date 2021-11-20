@@ -1,0 +1,105 @@
+/* ALL */
+* {
+    font-family: Didot, serif;
+
+}
+
+body {
+    text-align: center;
+    padding: 50px;
+}
+
+#header {
+    font-size:30px;
+    background-color: #66bb6a;
+    color:white;
+    border: dotted white;
+}
+
+/* TEXTBOXES */
+input {
+    border: 2px dotted rgb(114, 179, 123);
+    border-radius: 25px;
+  }
+
+input:focus {
+    background-color: rgb(114, 179, 123);
+    border: 2px solid rgb(114, 179, 123);
+  }
+
+textarea:focus {
+    background-color: rgb(114, 179, 123);
+    border: 2px solid rgb(114, 179, 123);
+  }
+
+textarea{
+    border: 2px dotted rgb(114, 179, 123);
+    border-radius: 25px;
+}
+
+/* DROPDOWN  */
+
+/* this would not center for anything in the world idk what i did i gave up  */
+#carKind, #carName {
+  width: 300px;
+  border-radius: 25px;
+  border: 2px dotted rgb(114, 179, 123);
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* CHECKBOX */
+#checkbox {
+    border-radius: 100%;
+}
+
+:checked {
+  background-color: #66bb6a;
+}
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    top: 0;
+    width: 28px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  } 
+
+  /* FOOTER  */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    background-color:#66bb6a;
+    color: white;
+  }
+
+footer a {
+    text-decoration: none;
+}
+
+#link1, #link2 {
+     color: white;
+}
+
+#link1:hover, #link2:hover {
+    color:black;
+}
