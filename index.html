@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CARS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!-- CSS  -->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    </head>
+
+    <div id="header"> Which Cars Character is Your Favorite?</div>
+    <br>
+    <button id="btnLoadData" class="btn btn-outline-dark">Load Saved Info</button>
+    <br>
+
+		<form action="page.html" method="get">
+            <fieldset>
+                <!-- TEXTBOXES -->
+				<legend>Login</legend>
+				<label>*Username: <input id="userName" type="text" name="name" size="30" minlength="3" maxlength="10" placeholder="John" required></label><br /> <br>
+				<label>*Password:  <input id="password"  type="password" name="email" size="30" minlength="6" maxlength="8" placeholder="Doe" required></label><br /><br>
+                </label><br />
+            </fieldset>
+
+			<fieldset>
+                <!-- MORE TEXTBOXES -->
+				<legend>Information</legend>
+				<label>*Name: <input id="nameName"  for="name" type="text" name="name" size="30" minlength="3" maxlength="20" placeholder="John Doe" required></label><br /> <br>
+				<label>*Email: <input id="userEmail"  type="email" name="email" size="30" minlength="6" maxlength="25" placeholder="johndoe@yahoo.com" required></label><br /><br>
+                <!-- NUMBER INPUT  -->
+                <label>Phone Number: <input type="number" name="phone" size="30" minlength="10" maxlength="11" placeholder="8881234567"></label><br /><br>
+                <!-- DATE AND TIME INPUT -->
+                <label>*Date: <input id="userDate"  type="date" name="date" size="30" minlength="1" maxlength="10" required></label><br /><br>
+                <label>*Time: <input id="userTime"  type="time" name="time" size="30" minlength="1" maxlength="10" required></label><br />
+            </fieldset><br />
+
+
+                  <!-- INPUT TO ANOTHER  -->
+            <br>
+            <fieldset>
+                <div id="carChars">
+                <legend>*Pick a Car</legend>
+                <label for="carKind" class="form-label">Car Type</label>
+                <select id="carKind" class="form-select" type="select" name="carName" >
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Sports Car">Sports Car</option>
+                    <option value="Race Car">Race Car</option>
+                    <option value="Normal Car">Normal Car</option>
+                    <option value="Old Car">Old Car</option>
+                </select>
+                <br>
+                <label for="carName" class="form-label">Car Names</label>
+                <select id="carName" class="form-select" type="select" name="carName" disabled>
+                    <option>Select car type first</option>
+                </select>
+                <br>
+            </div>
+            </fieldset>
+          
+
+                <!-- CHECKBOXES -->
+				<p> <br> 
+					Would you drive this car?<br />
+					<label><input type="radio" name="rating" value="yes" /> Yes</label>
+					<label><input type="radio" name="rating" value="no" /> No</label>
+					<label><input type="radio" name="rating" value="maybe" /> Maybe</label>
+				</p>
+				<p>
+                <br> 
+
+                    <!-- ANOTHER TEXTBOX -->
+					<label for="comments">Comments:</label><br />
+					<textarea rows="4" cols="40" id="comments" placeholder="Type here"></textarea>
+				</p>
+
+                <!-- ANOTHER CHECKBOX  -->
+				<label>Sign me up for updates</label>
+                <div class="container">
+                    <div class="round">
+                      <input type="checkbox" checked id="checkbox" />
+                      <label for="checkbox"></label>
+                    </div>
+                  </div> 
+                  <br>
+
+                  <!-- SUBMIT FORM (OR CLEAR) -->
+				<input type="submit" class="btn btn-outline-dark" value="Submit Order" />
+                <input type="reset" class="btn btn-outline-dark" value="Clear All">
+			</fieldset>
+
+		</form>
+
+        <!-- FOOTER  -->
+        <footer>
+                    <div class="d-flex justify-content-center mb-3" >
+                        <a id="link1" href="https://validator.w3.org/nu/#textarea" target="_blank">Nu</a>
+                        <span class="px-3">|</span>
+                        <a id="link2" href="https://github.com/maceyraejones/hotel/blob/main/index.html" target="_blank">REPO</a>
+                    </div>
+                    <p class="m-0">&copy; <a class="text-white font-weight-bold"></a>. All Rights Reserved. Designed by Macey Jones<a class="text-white font-weight-bold" href="#"></a>
+                    </p>
+        </footer>
+
+	</body>
+
+
+<!-- JS SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+<script src="scripts/ajax.js"></script>
+
+</html>
