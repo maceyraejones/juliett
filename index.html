@@ -25,19 +25,19 @@
 				<legend>Login</legend>
 				<label>*Username: <input id="userName" type="text" name="name" size="30" minlength="3" maxlength="10" placeholder="John" required></label><br /> <br>
 				<label>*Password:  <input id="password"  type="password" name="email" size="30" minlength="6" maxlength="8" placeholder="Doe" required></label><br /><br>
-                </label><br />
+                <br />
             </fieldset>
 
 			<fieldset>
                 <!-- MORE TEXTBOXES -->
 				<legend>Information</legend>
-				<label>*Name: <input id="nameName"  for="name" type="text" name="name" size="30" minlength="3" maxlength="20" placeholder="John Doe" required></label><br /> <br>
-				<label>*Email: <input id="userEmail"  type="email" name="email" size="30" minlength="6" maxlength="25" placeholder="johndoe@yahoo.com" required></label><br /><br>
+				<label>*Name: <input id="nameName" type="text" name="name" minlength="3" maxlength="20" placeholder="John Doe" required></label><br /> <br>
+				<label>*Email: <input id="userEmail"  type="email" name="email" minlength="6" maxlength="25" placeholder="johndoe@yahoo.com" required></label><br /><br>
                 <!-- NUMBER INPUT  -->
-                <label>Phone Number: <input type="number" name="phone" size="30" minlength="10" maxlength="11" placeholder="8881234567"></label><br /><br>
+                <label>Phone Number: <input type="number" name="phone" placeholder="8881234567"></label><br /><br>
                 <!-- DATE AND TIME INPUT -->
-                <label>*Date: <input id="userDate"  type="date" name="date" size="30" minlength="1" maxlength="10" required></label><br /><br>
-                <label>*Time: <input id="userTime"  type="time" name="time" size="30" minlength="1" maxlength="10" required></label><br />
+                <label>*Date: <input id="userDate"  type="date" name="date" required></label><br /><br>
+                <label>*Time: <input id="userTime"  type="time" name="time" required></label><br />
             </fieldset><br />
 
 
@@ -47,7 +47,7 @@
                 <div id="carChars">
                 <legend>*Pick a Car</legend>
                 <label for="carKind" class="form-label">Car Type</label>
-                <select id="carKind" class="form-select" type="select" name="carName" >
+                <select id="carKind" class="form-select" name="carName" >
                     <option value="" disabled selected>Select your option</option>
                     <option value="Sports Car">Sports Car</option>
                     <option value="Race Car">Race Car</option>
@@ -56,7 +56,7 @@
                 </select>
                 <br>
                 <label for="carName" class="form-label">Car Names</label>
-                <select id="carName" class="form-select" type="select" name="carName" disabled>
+                <select id="carName" class="form-select" name="carName" disabled>
                     <option>Select car type first</option>
                 </select>
                 <br>
@@ -92,7 +92,7 @@
                   <!-- SUBMIT FORM (OR CLEAR) -->
 				<input type="submit" class="btn btn-outline-dark" value="Submit Order" />
                 <input type="reset" class="btn btn-outline-dark" value="Clear All">
-			</fieldset>
+			
 
 		</form>
 
